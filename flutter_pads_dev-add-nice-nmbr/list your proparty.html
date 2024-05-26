@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/all.min.css" rel="stylesheet" />
+    <link href="assets/css/fontawesome.css" rel="stylesheet" />
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/2.1.24/daterangepicker.min.css" rel="stylesheet" />
+    <link href="assets/css/angular-mighty-datepicker.css" rel="stylesheet" />
+    <link href="assets/css/jquery.nice-number.css" rel="stylesheet" />
+    <link href="assets/css/aos.css" rel="stylesheet">
+    <link href="assets/css/default.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/responsive.css" rel="stylesheet" />
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+
+    <!-- offcanvas--area--start -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-closes text-resets" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="offcanva__menu">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="list your proparty.html">List your property</a></li>
+                    <li><a href="Search Page.html">Search</a></li>
+                    <li><a href="membership benefit.html">Membership</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- offcanvas--area--end -->
+
+    <!-- header-area-start -->
+    <header class="header">
+        <div class="container_cs">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="header__flex">
+                        <div class="header__logo">
+                            <a href="index.html"><img src="assets/img/bird-logo.png" alt=""></a>
+                            <span class="bird__tx">FlutterPads</span>
+                        </div>
+                        <div class="bar">
+                            <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><i class="fal fa-bars"></i></a>
+                        </div>
+                        <div class="header__right">
+                            <div class="header__menu">
+                                <ul>
+                                    <li ><a href="about.html">About</a></li>
+                                    <li ><a href="list your proparty.html">List your property</a></li>
+                                    <li ><a href="Search Page.html">Search</a></li>
+                                    <li ><a href="membership benefit.html">Membership</a></li>
+                                </ul>
+                            </div>
+                            <div class="header__btn" >
+                                <a href="#">Login</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-area-end -->
+
+    <!-- hero-area-start -->
+    <section class="hero" style="background-image: url(assets/img/hero-bg.png);">
+        <div class="container_cs">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="hero__content">
+                        <h3>Are you ready to <span>host</span>? We’re <span>stoked</span> to have you as part of <span>FlutterPads</span>.</h3>
+                        <a href="#Property">List a Property</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hero-area-end -->
+
+    <!-- book-area-start -->
+    <section class="book" id="Property">
+        <div class="container_cs">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="book__Sec__flex host__book">
+                        <div class="book__title">
+                            <h3>Ready to <span>host</span>? We’re <span>stoked</span>! <a href="#" class="tg"><img src="assets/img/site-logo-icon.png" alt=""></a></h3>
+                            <p>Take a few minutes to describe your property then submit to be part of the FlutterPads platform.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- book-area-end -->
+
+
+    <!--place--area--start-->
+    <div class="place__area">
+        <div class="container_cs">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="place__wrap">
+                        <div class="place_title">
+                            <h3>Describe your place</h3>
+                            <p>Which of the following best describes where your guests will be staying?</p>
+                        </div>
+                        <div class="place_fx">
+                            <div class="place__single__box">
+
+                                <div class="offer__single__box">
+                                    <input type="checkbox" id="checkbox1ssv">
+                                    <label for="checkbox1ssv">
+                                        <div class="place__img">
+                                            <img src="assets/img/proparty-page/p1.png" alt="">
+                                        </div>
+                                        <div class="place__ct">
+                                            <h5>Private Unit</h5>
+                                            <p>A serviced, private unit that guests will can freely access.</p>
+                                        </div>
+                                    </label>
+                                </div>
+
+
+
+
+                            </div>
+                            <div class="place__single__box">
+
+                                <div class="offer__single__box">
+                                    <input type="checkbox" id="checkbox1ssvs">
+                                    <label for="checkbox1ssvs">
+                                        <div class="place__img">
+                                            <img src="assets/img/proparty-page/p2.png" alt="">
+                                        </div>
+                                        <div class="place__ct">
+                                            <h5>Secondary Unit</h5>
+                                            <p>A private unit on the same property of
+                                                a primary residence. </p>
+                                        </div>
+                                    </label>
+                                </div>
+
+
+
+
+
+
+
+                            </div>
+                            <div class="place__single__box">
+
+                                <div class="offer__single__box">
+                                    <input type="checkbox" id="checkbox100">
+                                    <label for="checkbox100">
+                                        <div class="place__img">
+                                            <img src="assets/img/proparty-page/p3.png" alt="">
+                                        </div>
+                                        <div class="place__ct">
+                                            <h5>Apartment</h5>
+                                            <p>A unit within an apartment building which guests will have access to. </p>
+                                        </div>
+                                    </label>
+                                </div>
+
+
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--place--area--end-->
+
+
+    <!-- ai-area-start -->
+    <section class="ai ai-list__page__area">
+        <div class="container_cs">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ai__title">
+                        <h3>Use FlutterPads AI to complete details</h3>
+                        <p>Don’t want to fill everything out? Take and upload a video it to have FlutterPads AI complete your listing</p>
+                    </div>
+                    <div class="ai__flex ai__flex-__sec">
+                        <div class="ai__img ai--dbl">
+                            <img src="assets/img/proparty-page/u1.png" alt="">
+                        </div>
+                        <div class="ai__content">
+                            <div class="ai__list">
+                                <ul>
+                                    <li>Take a video of your space and upload it to the FlutterPads website </li>
+                                    <li>Our AI will analyze your video and choose the amenities you have at your place  </li>
+                                    <li>Once analyzed, FlutterPads AI will complete your listing on your behalf </li>
+                                    <li>You will be able to make any necessary changes before your listing goes live</li>
+                                </ul>
+                            </div>
+                            <div class="ai__btn">
+                                <a href="#">List with FlutterPads AI</a>
+                            </div>
+
+                        </div>
+                        <div class="ai__img ai-mbl">
+                            <img src="assets/img//proparty-page/u1.png" alt="">
+                        </div>
+                        <div class="ai__btn ai-btn-mbl">
+                            <a href="#">List with FlutterPads AI</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ai-area-end -->
+
+
+
+    <!--offer--area---start-->
+    <div class="offer_area">
+        <div class="container_cs">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="offer__wrap">
+                        <div class="place_title offer__title">
+                            <h3>What does your place offer?</h3>
+                            <p>Select the amenities your guests will have at your place</p>
+                        </div>
+                        <div class="offer__Fx">
+                            <div class="offer__single__box" >
+                                <input type="checkbox" id="checkbox1">
+                                <label for="checkbox1">
+                                    <span class="name__title">Amenity</span>
+                                    <span class="name__paragraph">Amenity details will go here, this is an example of a non-selected card</span>
+                                    <span class="amenity_icon"><i class="fas fa-tire-rugged"></i></span>
+                                </label>
+                            </div>
+                            <div class="offer__single__box" >
+                                <input type="checkbox" id="checkbox2">
+                                <label for="checkbox2">
+                                    <span class="name__title">Amenity</span>
+                                    <span class="name__paragraph">Amenity details will go here, this is an example of a non-selected card</span>
+                                    <span class="amenity_icon"><i class="fas fa-tire-rugged"></i></span>
+                                </label>
+                            </div>
+                            <div class="offer__single__box" >
+                                <input type="checkbox" id="checkbox3">
+                                <label for="checkbox3">
+                                    <span class="name__title">Amenity</span>
+                                    <span class="name__paragraph">Amenity details will go here, this is an example of a non-selected card</span>
+                                    <span class="amenity_icon"><i class="fas fa-tire-rugged"></i></span>
+                                </label>
+                            </div>
+                            <div class="offer__single__box" >
+                                <input type="checkbox" id="checkbox4">
+                                <label for="checkbox4">
+                                    <span class="name__title">Amenity</span>
+                                    <span class="name__paragraph">Amenity details will go here, this is an example of a non-selected card</span>
+                                    <span class="amenity_icon"><i class="fas fa-tire-rugged"></i></span>
+                                </label>
+                            </div>
+                            <div class="offer__single__box" >
+                                <input type="checkbox" id="checkbox5">
+                                <label for="checkbox5">
+                                    <span class="name__title">Amenity</span>
+                                    <span class="name__paragraph">Amenity details will go here, this is an example of a non-selected card</span>
+                                    <span class="amenity_icon"><i class="fas fa-tire-rugged"></i></span>
+                                </label>
+                            </div>
+                            <div class="offer__single__box" >
+                                <input type="checkbox" id="checkbox6">
+                                <label for="checkbox6">
+                                    <span class="name__title">Amenity</span>
+                                    <span class="name__paragraph">Amenity details will go here, this is an example of a non-selected card</span>
+                                    <span class="amenity_icon"><i class="fas fa-tire-rugged"></i></span>
+                                </label>
+                            </div>
+                            <div class="offer__single__box" >
+                                <input type="checkbox" id="checkbox7">
+                                <label for="checkbox7">
+                                    <span class="name__title">Amenity</span>
+                                    <span class="name__paragraph">Amenity details will go here, this is an example of a non-selected card</span>
+                                    <span class="amenity_icon"><i class="fas fa-tire-rugged"></i></span>
+                                </label>
+                            </div>
+                            <div class="offer__single__box" >
+                                <input type="checkbox" id="checkbox8">
+                                <label for="checkbox8">
+                                    <span class="name__title">Amenity</span>
+                                    <span class="name__paragraph">Amenity details will go here, this is an example of a non-selected card</span>
+                                    <span class="amenity_icon"><i class="fas fa-tire-rugged"></i></span>
+                                </label>
+                            </div>
+                            <div class="offer__single__box" >
+                                <input type="checkbox" id="checkbox9">
+                                <label for="checkbox9">
+                                    <span class="name__title">Amenity</span>
+                                    <span class="name__paragraph">Amenity details will go here, this is an example of a non-selected card</span>
+                                    <span class="amenity_icon"><i class="fas fa-tire-rugged"></i></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--offer--area---end-->
+
+    <!--offer--area---start-->
+    <div class="offer_area">
+        <div class="container_cs">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="offer__wrap">
+                        <div class="place_title offer__title">
+                            <h3>What does your place offer?</h3>
+                            <p>Select the amenities your guests will have at your place</p>
+                        </div>
+                        <div class="offer__Fx">
+                            <div class="offer__single__box" >
+                                <input type="checkbox" id="checkbox1s">
+                                <label for="checkbox1s">
+                                    <span class="name__title">Amenity</span>
+                                    <span class="name__paragraph">Amenity details will go here, this is an example of a non-selected card</span>
+                                    <span class="amenity_icon"><i class="fas fa-tire-rugged"></i></span>
+                                </label>
+                            </div>
+                            <div class="offer__single__box" >
+                                <input type="checkbox" id="checkbox2d">
+                                <label for="checkbox2d">
+                                    <span class="name__title">Amenity</span>
+                                    <span class="name__paragraph">Amenity details will go here, this is an example of a non-selected card</span>
+                                    <span class="amenity_icon"><i class="fas fa-tire-rugged"></i></span>
+                                </label>
+                            </div>
+                            <div class="offer__single__box" >
+                                <input type="checkbox" id="checkbox3dd">
+                                <label for="checkbox3dd">
+                                    <span class="name__title">Amenity</span>
+                                    <span class="name__paragraph">Amenity details will go here, this is an example of a non-selected card</span>
+                                    <span class="amenity_icon"><i class="fas fa-tire-rugged"></i></span>
+                                </label>
+                            </div>
+                            <div class="offer__single__box" >
+                                <input type="checkbox" id="checkbox4f">
+                                <label for="checkbox4f">
+                                    <span class="name__title">Amenity</span>
+                                    <span class="name__paragraph">Amenity details will go here, this is an example of a non-selected card</span>
+                                    <span class="amenity_icon"><i class="fas fa-tire-rugged"></i></span>
+                                </label>
+                            </div>
+                            <div class="offer__single__box" >
+                                <input type="checkbox" id="checkbox5ff">
+                                <label for="checkbox5ff">
+                                    <span class="name__title">Amenity</span>
+                                    <span class="name__paragraph">Amenity details will go here, this is an example of a non-selected card</span>
+                                    <span class="amenity_icon"><i class="fas fa-tire-rugged"></i></span>
+                                </label>
+                            </div>
+                            <div class="offer__single__box" >
+                                <input type="checkbox" id="checkbox6fff">
+                                <label for="checkbox6fff">
+                                    <span class="name__title">Amenity</span>
+                                    <span class="name__paragraph">Amenity details will go here, this is an example of a non-selected card</span>
+                                    <span class="amenity_icon"><i class="fas fa-tire-rugged"></i></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--offer--area---end-->
+
+    <!--offer--area---start-->
+    <div class="offer_area">
+        <div class="container_cs">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="offer__wrap">
+                        <div class="place_title offer__title">
+                            <h3>Any standout amenities?</h3>
+                            <p>Is there anything that would draw guests to your place?</p>
+                        </div>
+                        <div class="offer__Fx">
+                            <div class="offer__single__box" >
+                                <input type="checkbox" id="checkbox11">
+                                <label for="checkbox11">
+                                    <span class="name__title">Amenity</span>
+                                    <span class="name__paragraph">Amenity details will go here, this is an example of a non-selected card</span>
+                                    <span class="amenity_icon"><i class="fas fa-tire-rugged"></i></span>
+                                </label>
+                            </div>
+                            <div class="offer__single__box" >
+                                <input type="checkbox" id="checkbox22d">
+                                <label for="checkbox22d">
+                                    <span class="name__title">Amenity</span>
+                                    <span class="name__paragraph">Amenity details will go here, this is an example of a non-selected card</span>
+                                    <span class="amenity_icon"><i class="fas fa-tire-rugged"></i></span>
+                                </label>
+                            </div>
+                            <div class="offer__single__box" >
+                                <input type="checkbox" id="checkbox33dd">
+                                <label for="checkbox33dd">
+                                    <span class="name__title">Amenity</span>
+                                    <span class="name__paragraph">Amenity details will go here, this is an example of a non-selected card</span>
+                                    <span class="amenity_icon"><i class="fas fa-tire-rugged"></i></span>
+                                </label>
+                            </div>
+                            <div class="offer__single__box" >
+                                <input type="checkbox" id="checkbox44f">
+                                <label for="checkbox44f">
+                                    <span class="name__title">Amenity</span>
+                                    <span class="name__paragraph">Amenity details will go here, this is an example of a non-selected card</span>
+                                    <span class="amenity_icon"><i class="fas fa-tire-rugged"></i></span>
+                                </label>
+                            </div>
+                            <div class="offer__single__box" >
+                                <input type="checkbox" id="checkbox55ff">
+                                <label for="checkbox55ff">
+                                    <span class="name__title">Amenity</span>
+                                    <span class="name__paragraph">Amenity details will go here, this is an example of a non-selected card</span>
+                                    <span class="amenity_icon"><i class="fas fa-tire-rugged"></i></span>
+                                </label>
+                            </div>
+                            <div class="offer__single__box" >
+                                <input type="checkbox" id="checkbox66fff">
+                                <label for="checkbox66fff">
+                                    <span class="name__title">Amenity</span>
+                                    <span class="name__paragraph">Amenity details will go here, this is an example of a non-selected card</span>
+                                    <span class="amenity_icon"><i class="fas fa-tire-rugged"></i></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--offer--area---end-->
+
+
+
+
+
+
+
+    <!--address--area--start-->
+    <div class="address__area">
+        <div class="container_cs">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="address__wrap">
+                        <div class="place_title address__title">
+                            <h3>Any standout amenities?</h3>
+                            <p>Is there anything that would draw guests to your place?</p>
+                        </div>
+                        <div class="address__search">
+                            <div class="searchInput">
+                                <input type="text" placeholder="New York, United States">
+                                <div class="resultBox">
+                                    <!-- here list are inserted from javascript -->
+                                </div>
+                                <div class="location__icon"><img src="assets/img/proparty-page/LeftIcon.svg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="much__wrap">
+                            <div class="place_title address__title">
+                                <h3>How much space does your place have?</h3>
+                                <p>Don’t worry, you’ll have the opportunity to add more details later</p>
+                            </div>
+
+
+                            <div class="much__count__fx">
+                                <div class="much__single__count">
+                                    <h5>Guests</h5>
+                                    <div class="number">
+                                        <span class="minus"><i class="far fa-minus"></i></span>
+                                        <input type="text" value="1" />
+                                        <span class="plus"><i class="fal fa-plus"></i></span>
+                                    </div>
+                                </div>
+                                <div class="much__single__count">
+                                    <h5>Bedrooms</h5>
+                                    <div class="number">
+                                        <span class="minus"><i class="far fa-minus"></i></span>
+                                        <input type="text" value="1" />
+                                        <span class="plus"><i class="fal fa-plus"></i></span>
+                                    </div>
+                                </div>
+                                <div class="much__single__count">
+                                    <h5>Beds</h5>
+                                    <div class="number">
+                                        <span class="minus"><i class="far fa-minus"></i></span>
+                                        <input type="text" value="1" />
+                                        <span class="plus"><i class="fal fa-plus"></i></span>
+                                    </div>
+                                </div>
+                                <div class="much__single__count">
+                                    <h5>Bathrooms</h5>
+                                    <div class="number">
+                                        <span class="minus"><i class="far fa-minus"></i></span>
+                                        <input type="text" value="1" />
+                                        <span class="plus"><i class="fal fa-plus"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--address--area-end-->
+
+
+
+
+
+
+
+
+    <!-- footer-area-start -->
+    <footer class="footer">
+        <div class="container_cs">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer__flex">
+                        <div class="footer__left">
+                            <div class="footer__logo">
+                                <a href="index.html"><img src="assets/img/footer-logo.png" alt=""></a>
+                            </div>
+                            <div class="footer__text">
+                                <p>Live where you want when you want. No baggage.</p>
+                                <div class="footer__socail">
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__right">
+                            <div class="footer__menu">
+                                <h3>FlutterPads</h3>
+                                <ul>
+                                    <li><a href="property.html">Host a Room</a></li>
+                                    <li><a href="#">Host an Experience</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__menu">
+                                <h3>Support</h3>
+                                <ul>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__copy">
+                        <p>©️ 2024 FlutterPads Holding Inc. All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-area-end -->
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/2.1.24/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/2.1.24/daterangepicker.min.js">
+    </script>
+    <script src="assets/js/jquery.nice-number.js"></script>
+    <script src="assets/js/jquery.nav.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        let suggestions = [
+            "bangladesh",
+            "India",
+            "Nepal",
+            "Japan",
+            "China",
+            "Afghanistan",
+            "Sweden",
+            "Switzerland",
+            "United States",
+            "United Kingdom",
+            "Vanuatu",
+            "Mongolia",
+            "Kyrgyzstan",
+            "Luxembourg",
+            "Latvia",
+            "Lebanon",
+        ];
+
+        // getting all required elements
+        const searchInput = document.querySelector(".searchInput");
+        const input = searchInput.querySelector("input");
+        const resultBox = searchInput.querySelector(".resultBox");
+        const icon = searchInput.querySelector(".icon");
+        let linkTag = searchInput.querySelector("a");
+        let webLink;
+
+        // if user press any key and release
+        input.onkeyup = (e) => {
+            let userData = e.target.value; //user enetered data
+            let emptyArray = [];
+            if (userData) {
+                emptyArray = suggestions.filter((data) => {
+                    //filtering array value and user characters to lowercase and return only those words which are start with user enetered chars
+                    return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase());
+                });
+                emptyArray = emptyArray.map((data) => {
+                    // passing return data inside li tag
+                    return data = '<li>' + data + '</li>';
+                });
+                searchInput.classList.add("active"); //show autocomplete box
+                showSuggestions(emptyArray);
+                let allList = resultBox.querySelectorAll("li");
+                for (let i = 0; i < allList.length; i++) {
+                    //adding onclick attribute in all li tag
+                    allList[i].setAttribute("onclick", "select(this)");
+                }
+            } else {
+                searchInput.classList.remove("active"); //hide autocomplete box
+            }
+        }
+
+        function showSuggestions(list) {
+            let listData;
+            if (!list.length) {
+                userValue = inputBox.value;
+                listData = '<li>' + userValue + '</li>';
+            } else {
+                listData = list.join('');
+            }
+            resultBox.innerHTML = listData;
+        }
+
+    </script>
+
+
+    <script src="assets/js/calender2.js"></script>
+
+
+    <script>
+        AOS.init();
+
+        // You can also pass an optional settings object
+        // below listed default settings
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 400, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: true, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
+
+</body>
+
+</html>
