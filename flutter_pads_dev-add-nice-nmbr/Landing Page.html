@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/all.min.css" rel="stylesheet" />
+    <link href="assets/css/fontawesome.css" rel="stylesheet" />
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assets/css/nice-select.css" rel="stylesheet" />
+    <link href="assets/css/jquery.nice-number.css" rel="stylesheet" />
+    <link href="assets/css/venobox.min.css" rel="stylesheet" />
+    <link href="assets/css/aos.css" rel="stylesheet">
+    <link href="assets/css/default.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/responsive.css" rel="stylesheet" />
+    <link href="assets/css/daterangepicker.css" rel="stylesheet" />
+
+    <title>Hello, world!</title>
+</head>
+
+<body class="body">
+    <div class="wrapper">
+        <!-- offcanvas--area--start -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-closes text-resets" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                        class="fas fa-times"></i></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="offcanva__menu">
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="list your proparty.html">List your property</a></li>
+                        <li><a href="Search Page.html">Search</a></li>
+                        <li><a href="membership benefit.html">Membership</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- offcanvas--area--end -->
+
+        <!-- header-area-start -->
+        <header class="header">
+            <div class="container_cs">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="header__flex">
+                            <div class="header__logo">
+                                <a href="Landing Page.html"><img src="assets/img/bird-logo.png" alt=""></a>
+                                <span class="bird__tx">FlutterPads</span>
+                            </div>
+                            <div class="bar">
+                                <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                                    aria-controls="offcanvasExample"><i class="fal fa-bars"></i></a>
+                            </div>
+                            <div class="header__right">
+                                <div class="header__menu">
+                                    <ul>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="list your proparty.html">List your property</a></li>
+                                        <li><a href="Search Page.html">Search</a></li>
+                                        <li><a href="membership benefit.html">Membership</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header__btn">
+                                    <a href="#">Login</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header-area-end -->
+
+        <!-- hero-area-start -->
+        <section class="hero" style="background-image: url(assets/img/hero-bg.png);">
+            <div class="container_cs">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="hero__content">
+                            <h3>Live <span>where</span> you want, <span>when</span> you want.
+                                No baggage.</h3>
+                            <a href="membership benefit.html">Become a Member</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- hero-area-end -->
+
+        <!-- book-area-start -->
+        <section class="book">
+            <div class="container_cs">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="book__title--flex search-page-flx">
+                            <div class="book__title">
+                                <h3>Where to? <a href="#"><img src="assets/img/site-logo-icon.png" alt=""></a></h3>
+                                <p>Take a look at what our Membership-based Extended-Stay rentals have to offer.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="book__filter search-page-filter">
+                            <div class="filter__title--top">
+                                <h3>Stays</h3>
+                            </div>
+                            <div class="booking__filter--left">
+                                <div class="filter__date">
+                                    <form action="">
+                                        <div class="single__date" javascript: void(0);>
+                                            <div class="folter__dp">
+                                                <img class="f1" src="assets/img/f1.svg" alt="">
+                                                <input type="text" placeholder="Arrival" name="value_from_start_date"
+                                                    data-datepicker="separateRange" />
+                                            </div>
+                                            <span><img src="assets/img/arrow-thin-right.svg" alt=""></span>
+                                            <input class="reng__fil2" type="text" placeholder="Departure"
+                                                name="value_from_end_date" data-datepicker="separateRange" />
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="filter__place" onclick="myFunction()">
+                                    <div class="where_select">
+                                        <h3><a href="#!!"><img src="assets/img/f2.svg" alt=""></a> <span
+                                                id="destination-input">Where to?</span></h3>
+                                    </div>
+                                    <div class="filter___dropdown" id="myDropdown">
+                                        <div class="filter__drop__fx">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="filter__guest guest__dropdown">
+                                    <div class="click__guest d-flex align-items-center">
+                                        <img src="assets/img/f3.svg" alt="">
+                                        <div class="checkin__input">
+                                            <div class="number check-nmbr">
+                                                <span class="minus"><i class="fal fa-minus-circle"></i></span>
+                                                <div class="number__gst__Fx">
+                                                    <input type="text" value="1">
+                                                    <span class="chek-text">Guests</span>
+                                                </div>
+                                                <span class="plus"><i class="fal fa-plus-circle"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter__dropdown">
+                                        <ul>
+                                            <li>
+                                                <div class="drop__left">
+                                                    <h4>Adults</h4>
+                                                    <span>Ages 13 or above</span>
+                                                </div>
+                                                <div class="drop__right">
+                                                    <div class="number">
+                                                        <span class="minus"><i class="far fa-minus"></i></span>
+                                                        <input type="text" value="1">
+                                                        <span class="plus"><i class="fal fa-plus"></i></span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="drop__left">
+                                                    <h4>Adults</h4>
+                                                    <span>Ages 13 or above</span>
+                                                </div>
+                                                <div class="drop__right">
+                                                    <div class="number">
+                                                        <span class="minus"><i class="far fa-minus"></i></span>
+                                                        <input type="text" value="1">
+                                                        <span class="plus"><i class="fal fa-plus"></i></span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="drop__left">
+                                                    <h4>Adults</h4>
+                                                    <span>Ages 13 or above</span>
+                                                </div>
+                                                <div class="drop__right">
+                                                    <div class="number">
+                                                        <span class="minus"><i class="far fa-minus"></i></span>
+                                                        <input type="text" value="1">
+                                                        <span class="plus"><i class="fal fa-plus"></i></span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="drop__left">
+                                                    <h4>Adults</h4>
+                                                    <span>Ages 13 or above</span>
+                                                </div>
+                                                <div class="drop__right">
+                                                    <div class="number">
+                                                        <span class="minus"><i class="far fa-minus"></i></span>
+                                                        <input type="text" value="1">
+                                                        <span class="plus"><i class="fal fa-plus"></i></span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="filter__search">
+                                    <a href="#"><i class="far fa-search"></i> <span>search</span></a>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- book-area-end -->
+
+
+
+        <!-- pool-area-start -->
+        <section class="pool pool__area--sec">
+            <div class="container_cs">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="pool__title--flex">
+                            <div class="pool__title">
+                                <h3>Our Featured Properties</h3>
+                                <p>Take a look at some of the most sought after properties on FlutterPads</p>
+                            </div>
+                            <div class="pool__btn">
+                                <a href="Search Page.html">View all properties</a>
+                            </div>
+                        </div>
+
+                        <div class="pool__flex">
+
+                            <div class="single__pool">
+                                <div class="single__pool--img">
+                                    <div class="pool__img-slider owl-carousel">
+                                        <div class="pool__img">
+                                            <a href="list your proparty.html"><img src="assets/img/pool1.png"
+                                                    alt=""></a>
+                                        </div>
+                                        <div class="pool__img">
+                                            <a href="list your proparty.html"><img src="assets/img/pool1.png"
+                                                    alt=""></a>
+                                        </div>
+                                        <div class="pool__img">
+                                            <a href="list your proparty.html"><img src="assets/img/pool1.png"
+                                                    alt=""></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="pool__love">
+                                        <div class="heart-container" onclick="toggleHeart('heart1')">
+                                            <a href="#!!" class="heart-icon" id="heart1"><i
+                                                    class="far fa-heart hrt-nn"></i>
+                                                <i class="fas fa-heart hrt-blc"></i></a>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="pool__content" data-url="list your proparty.html">
+                                    <div class="pool__con--title">
+                                        <h3>Cozy bungalow and pool</h3>
+                                        <span>Venice, CA</span>
+                                    </div>
+                                    <div class="pool__price">
+                                        <h3>$5,000/ <span>month Member-Price</span></h3>
+                                        <p>$5,250/ <span>month Non-Member Price</span></p>
+                                    </div>
+                                    <div class="pool__tag">
+                                        <a href="#">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_2019_518)">
+                                                    <path
+                                                        d="M7.49984 9.16667C8.15911 9.16667 8.80357 8.97117 9.35174 8.6049C9.8999 8.23863 10.3271 7.71803 10.5794 7.10895C10.8317 6.49986 10.8977 5.82964 10.7691 5.18303C10.6405 4.53643 10.323 3.94249 9.85686 3.47631C9.39069 3.01014 8.79674 2.69267 8.15014 2.56405C7.50354 2.43543 6.83331 2.50144 6.22423 2.75374C5.61514 3.00603 5.09454 3.43327 4.72827 3.98143C4.362 4.5296 4.1665 5.17406 4.1665 5.83334C4.1665 6.71739 4.51769 7.56524 5.14281 8.19036C5.76794 8.81548 6.61578 9.16667 7.49984 9.16667Z"
+                                                        fill="#F5593E" />
+                                                    <path
+                                                        d="M14.1665 10.8333C14.661 10.8333 15.1443 10.6867 15.5554 10.412C15.9666 10.1373 16.287 9.74684 16.4762 9.29002C16.6654 8.83321 16.7149 8.33054 16.6185 7.84559C16.522 7.36064 16.2839 6.91518 15.9343 6.56555C15.5846 6.21592 15.1392 5.97781 14.6542 5.88135C14.1693 5.78489 13.6666 5.8344 13.2098 6.02362C12.753 6.21283 12.3625 6.53327 12.0878 6.94439C11.8131 7.35551 11.6665 7.83886 11.6665 8.33331C11.6665 8.99636 11.9299 9.63224 12.3987 10.1011C12.8676 10.5699 13.5035 10.8333 14.1665 10.8333Z"
+                                                        fill="#F5593E" />
+                                                    <path
+                                                        d="M17.4998 16.6666C17.7208 16.6666 17.9328 16.5788 18.0891 16.4226C18.2454 16.2663 18.3332 16.0543 18.3332 15.8333C18.3325 15.0545 18.1136 14.2914 17.7012 13.6307C17.2888 12.97 16.6995 12.4381 16.0001 12.0954C15.3008 11.7526 14.5193 11.6127 13.7445 11.6916C12.9697 11.7705 12.2325 12.065 11.6165 12.5416C10.8003 11.7286 9.76155 11.1755 8.63136 10.952C7.50116 10.7285 6.3301 10.8447 5.26586 11.2859C4.20162 11.7271 3.29185 12.4736 2.65129 13.4312C2.01073 14.3887 1.66806 15.5146 1.6665 16.6666C1.6665 16.8876 1.7543 17.0996 1.91058 17.2559C2.06686 17.4122 2.27882 17.5 2.49984 17.5H12.4998C12.7209 17.5 12.9328 17.4122 13.0891 17.2559C13.2454 17.0996 13.3332 16.8876 13.3332 16.6666"
+                                                        fill="#F5593E" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_2019_518">
+                                                        <rect width="20" height="20" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            6 guests</a>
+                                        <a href="#">
+                                            <svg width="20" height="17" viewBox="0 0 20 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_2045_214)">
+                                                    <path d="M19.2858 8.13068H0.714355V15.5222H19.2858V8.13068Z"
+                                                        fill="#F5593E" />
+                                                    <path d="M19.2856 16.2614V8.13068" stroke="#F5593E"
+                                                        stroke-width="1.47831" stroke-linecap="round" />
+                                                    <path d="M0.714355 16.2614V8.13068" stroke="#F5593E"
+                                                        stroke-width="1.47831" stroke-linecap="round" />
+                                                    <path
+                                                        d="M17.143 0H2.85728C2.068 0 1.42871 0.661544 1.42871 1.47831V6.6524H2.85728V5.17409C2.85728 4.76608 3.17728 4.43493 3.57157 4.43493H8.57157C8.96585 4.43493 9.28585 4.76608 9.28585 5.17409V6.6524H10.7144V5.17409C10.7144 4.76608 11.0344 4.43493 11.4287 4.43493H16.4287C16.823 4.43493 17.143 4.76608 17.143 5.17409V6.6524H18.5716V1.47831C18.5716 0.661544 17.9323 0 17.143 0Z"
+                                                        fill="#F5593E" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_2045_214">
+                                                        <rect width="20" height="17.0006" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+
+                                            2 beds
+                                        </a>
+                                        <a href="#">
+                                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M16.4998 6.3333H4.83317V3.92746C4.83317 3.09663 5.39817 2.32496 6.21734 2.18996C7.25984 2.01746 8.1665 2.82163 8.1665 3.8333H9.83317C9.83317 1.8858 8.15484 0.323296 6.16817 0.51663C4.43567 0.684963 3.1665 2.2408 3.1665 3.98163V6.3333H1.49984C1.039 6.3333 0.666504 6.70663 0.666504 7.16663V8.8333C0.666504 11.005 2.0615 12.8525 3.99984 13.5416V16.3333H5.6665V13.8333H12.3332V16.3333H13.9998V13.5416C15.9382 12.8525 17.3332 11.005 17.3332 8.8333V7.16663C17.3332 6.70663 16.9607 6.3333 16.4998 6.3333Z"
+                                                    fill="#F5593E" />
+                                            </svg>
+
+                                            1 bathroom</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="single__pool">
+                                <div class="single__pool--img">
+                                    <div class="pool__img-slider owl-carousel">
+                                        <div class="pool__img">
+                                            <a href="list your proparty.html"><img src="assets/img/pool1.png"
+                                                    alt=""></a>
+                                        </div>
+                                        <div class="pool__img">
+                                            <a href="list your proparty.html"><img src="assets/img/pool1.png"
+                                                    alt=""></a>
+                                        </div>
+                                        <div class="pool__img">
+                                            <a href="list your proparty.html"><img src="assets/img/pool1.png"
+                                                    alt=""></a>
+                                        </div>
+                                        <div class="pool__img">
+                                            <a href="list your proparty.html"><img src="assets/img/pool1.png"
+                                                    alt=""></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="pool__love">
+                                        <div class="heart-container" onclick="toggleHeart('heart12')">
+                                            <a href="#!!" class="heart-icon" id="heart12"><i
+                                                    class="far fa-heart hrt-nn"></i> <i
+                                                    class="fas fa-heart hrt-blc"></i></a>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="pool__content" data-url="list your proparty.html">
+                                    <div class="pool__con--title">
+                                        <h3>Cozy bungalow and pool</h3>
+                                        <span>Venice, CA</span>
+                                    </div>
+                                    <div class="pool__price">
+                                        <h3>$5,000/ <span>month Member-Price</span></h3>
+                                        <p>$5,250/ <span>month Non-Member Price</span></p>
+                                    </div>
+                                    <div class="pool__tag">
+                                        <a href="#">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_2019_518)">
+                                                    <path
+                                                        d="M7.49984 9.16667C8.15911 9.16667 8.80357 8.97117 9.35174 8.6049C9.8999 8.23863 10.3271 7.71803 10.5794 7.10895C10.8317 6.49986 10.8977 5.82964 10.7691 5.18303C10.6405 4.53643 10.323 3.94249 9.85686 3.47631C9.39069 3.01014 8.79674 2.69267 8.15014 2.56405C7.50354 2.43543 6.83331 2.50144 6.22423 2.75374C5.61514 3.00603 5.09454 3.43327 4.72827 3.98143C4.362 4.5296 4.1665 5.17406 4.1665 5.83334C4.1665 6.71739 4.51769 7.56524 5.14281 8.19036C5.76794 8.81548 6.61578 9.16667 7.49984 9.16667Z"
+                                                        fill="#F5593E" />
+                                                    <path
+                                                        d="M14.1665 10.8333C14.661 10.8333 15.1443 10.6867 15.5554 10.412C15.9666 10.1373 16.287 9.74684 16.4762 9.29002C16.6654 8.83321 16.7149 8.33054 16.6185 7.84559C16.522 7.36064 16.2839 6.91518 15.9343 6.56555C15.5846 6.21592 15.1392 5.97781 14.6542 5.88135C14.1693 5.78489 13.6666 5.8344 13.2098 6.02362C12.753 6.21283 12.3625 6.53327 12.0878 6.94439C11.8131 7.35551 11.6665 7.83886 11.6665 8.33331C11.6665 8.99636 11.9299 9.63224 12.3987 10.1011C12.8676 10.5699 13.5035 10.8333 14.1665 10.8333Z"
+                                                        fill="#F5593E" />
+                                                    <path
+                                                        d="M17.4998 16.6666C17.7208 16.6666 17.9328 16.5788 18.0891 16.4226C18.2454 16.2663 18.3332 16.0543 18.3332 15.8333C18.3325 15.0545 18.1136 14.2914 17.7012 13.6307C17.2888 12.97 16.6995 12.4381 16.0001 12.0954C15.3008 11.7526 14.5193 11.6127 13.7445 11.6916C12.9697 11.7705 12.2325 12.065 11.6165 12.5416C10.8003 11.7286 9.76155 11.1755 8.63136 10.952C7.50116 10.7285 6.3301 10.8447 5.26586 11.2859C4.20162 11.7271 3.29185 12.4736 2.65129 13.4312C2.01073 14.3887 1.66806 15.5146 1.6665 16.6666C1.6665 16.8876 1.7543 17.0996 1.91058 17.2559C2.06686 17.4122 2.27882 17.5 2.49984 17.5H12.4998C12.7209 17.5 12.9328 17.4122 13.0891 17.2559C13.2454 17.0996 13.3332 16.8876 13.3332 16.6666"
+                                                        fill="#F5593E" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_2019_518">
+                                                        <rect width="20" height="20" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            6 guests</a>
+                                        <a href="#">
+                                            <svg width="20" height="17" viewBox="0 0 20 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_2045_214)">
+                                                    <path d="M19.2858 8.13068H0.714355V15.5222H19.2858V8.13068Z"
+                                                        fill="#F5593E" />
+                                                    <path d="M19.2856 16.2614V8.13068" stroke="#F5593E"
+                                                        stroke-width="1.47831" stroke-linecap="round" />
+                                                    <path d="M0.714355 16.2614V8.13068" stroke="#F5593E"
+                                                        stroke-width="1.47831" stroke-linecap="round" />
+                                                    <path
+                                                        d="M17.143 0H2.85728C2.068 0 1.42871 0.661544 1.42871 1.47831V6.6524H2.85728V5.17409C2.85728 4.76608 3.17728 4.43493 3.57157 4.43493H8.57157C8.96585 4.43493 9.28585 4.76608 9.28585 5.17409V6.6524H10.7144V5.17409C10.7144 4.76608 11.0344 4.43493 11.4287 4.43493H16.4287C16.823 4.43493 17.143 4.76608 17.143 5.17409V6.6524H18.5716V1.47831C18.5716 0.661544 17.9323 0 17.143 0Z"
+                                                        fill="#F5593E" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_2045_214">
+                                                        <rect width="20" height="17.0006" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+
+                                            2 beds
+                                        </a>
+                                        <a href="#">
+                                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M16.4998 6.3333H4.83317V3.92746C4.83317 3.09663 5.39817 2.32496 6.21734 2.18996C7.25984 2.01746 8.1665 2.82163 8.1665 3.8333H9.83317C9.83317 1.8858 8.15484 0.323296 6.16817 0.51663C4.43567 0.684963 3.1665 2.2408 3.1665 3.98163V6.3333H1.49984C1.039 6.3333 0.666504 6.70663 0.666504 7.16663V8.8333C0.666504 11.005 2.0615 12.8525 3.99984 13.5416V16.3333H5.6665V13.8333H12.3332V16.3333H13.9998V13.5416C15.9382 12.8525 17.3332 11.005 17.3332 8.8333V7.16663C17.3332 6.70663 16.9607 6.3333 16.4998 6.3333Z"
+                                                    fill="#F5593E" />
+                                            </svg>
+
+                                            1 bathroom</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="single__pool">
+                                <div class="single__pool--img">
+                                    <div class="pool__img-slider owl-carousel">
+                                        <div class="pool__img">
+                                            <a href="list your proparty.html"><img src="assets/img/pool1.png"
+                                                    alt=""></a>
+                                        </div>
+                                        <div class="pool__img">
+                                            <a href="list your proparty.html"><img src="assets/img/pool1.png"
+                                                    alt=""></a>
+                                        </div>
+                                        <div class="pool__img">
+                                            <a href="list your proparty.html"><img src="assets/img/pool1.png"
+                                                    alt=""></a>
+                                        </div>
+                                        <div class="pool__img">
+                                            <a href="list your proparty.html"><img src="assets/img/pool1.png"
+                                                    alt=""></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="pool__love">
+                                        <div class="heart-container" onclick="toggleHeart('heart13')">
+                                            <a href="#!!" class="heart-icon" id="heart13"><i
+                                                    class="far fa-heart hrt-nn"></i> <i
+                                                    class="fas fa-heart hrt-blc"></i></a>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="pool__content" data-url="list your proparty.html">
+                                    <div class="pool__con--title">
+                                        <h3>Cozy bungalow and pool</h3>
+                                        <span>Venice, CA</span>
+                                    </div>
+                                    <div class="pool__price">
+                                        <h3>$5,000/ <span>month Member-Price</span></h3>
+                                        <p>$5,250/ <span>month Non-Member Price</span></p>
+                                    </div>
+                                    <div class="pool__tag">
+                                        <a href="#">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_2019_518)">
+                                                    <path
+                                                        d="M7.49984 9.16667C8.15911 9.16667 8.80357 8.97117 9.35174 8.6049C9.8999 8.23863 10.3271 7.71803 10.5794 7.10895C10.8317 6.49986 10.8977 5.82964 10.7691 5.18303C10.6405 4.53643 10.323 3.94249 9.85686 3.47631C9.39069 3.01014 8.79674 2.69267 8.15014 2.56405C7.50354 2.43543 6.83331 2.50144 6.22423 2.75374C5.61514 3.00603 5.09454 3.43327 4.72827 3.98143C4.362 4.5296 4.1665 5.17406 4.1665 5.83334C4.1665 6.71739 4.51769 7.56524 5.14281 8.19036C5.76794 8.81548 6.61578 9.16667 7.49984 9.16667Z"
+                                                        fill="#F5593E" />
+                                                    <path
+                                                        d="M14.1665 10.8333C14.661 10.8333 15.1443 10.6867 15.5554 10.412C15.9666 10.1373 16.287 9.74684 16.4762 9.29002C16.6654 8.83321 16.7149 8.33054 16.6185 7.84559C16.522 7.36064 16.2839 6.91518 15.9343 6.56555C15.5846 6.21592 15.1392 5.97781 14.6542 5.88135C14.1693 5.78489 13.6666 5.8344 13.2098 6.02362C12.753 6.21283 12.3625 6.53327 12.0878 6.94439C11.8131 7.35551 11.6665 7.83886 11.6665 8.33331C11.6665 8.99636 11.9299 9.63224 12.3987 10.1011C12.8676 10.5699 13.5035 10.8333 14.1665 10.8333Z"
+                                                        fill="#F5593E" />
+                                                    <path
+                                                        d="M17.4998 16.6666C17.7208 16.6666 17.9328 16.5788 18.0891 16.4226C18.2454 16.2663 18.3332 16.0543 18.3332 15.8333C18.3325 15.0545 18.1136 14.2914 17.7012 13.6307C17.2888 12.97 16.6995 12.4381 16.0001 12.0954C15.3008 11.7526 14.5193 11.6127 13.7445 11.6916C12.9697 11.7705 12.2325 12.065 11.6165 12.5416C10.8003 11.7286 9.76155 11.1755 8.63136 10.952C7.50116 10.7285 6.3301 10.8447 5.26586 11.2859C4.20162 11.7271 3.29185 12.4736 2.65129 13.4312C2.01073 14.3887 1.66806 15.5146 1.6665 16.6666C1.6665 16.8876 1.7543 17.0996 1.91058 17.2559C2.06686 17.4122 2.27882 17.5 2.49984 17.5H12.4998C12.7209 17.5 12.9328 17.4122 13.0891 17.2559C13.2454 17.0996 13.3332 16.8876 13.3332 16.6666"
+                                                        fill="#F5593E" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_2019_518">
+                                                        <rect width="20" height="20" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            6 guests</a>
+                                        <a href="#">
+                                            <svg width="20" height="17" viewBox="0 0 20 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_2045_214)">
+                                                    <path d="M19.2858 8.13068H0.714355V15.5222H19.2858V8.13068Z"
+                                                        fill="#F5593E" />
+                                                    <path d="M19.2856 16.2614V8.13068" stroke="#F5593E"
+                                                        stroke-width="1.47831" stroke-linecap="round" />
+                                                    <path d="M0.714355 16.2614V8.13068" stroke="#F5593E"
+                                                        stroke-width="1.47831" stroke-linecap="round" />
+                                                    <path
+                                                        d="M17.143 0H2.85728C2.068 0 1.42871 0.661544 1.42871 1.47831V6.6524H2.85728V5.17409C2.85728 4.76608 3.17728 4.43493 3.57157 4.43493H8.57157C8.96585 4.43493 9.28585 4.76608 9.28585 5.17409V6.6524H10.7144V5.17409C10.7144 4.76608 11.0344 4.43493 11.4287 4.43493H16.4287C16.823 4.43493 17.143 4.76608 17.143 5.17409V6.6524H18.5716V1.47831C18.5716 0.661544 17.9323 0 17.143 0Z"
+                                                        fill="#F5593E" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_2045_214">
+                                                        <rect width="20" height="17.0006" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+
+                                            2 beds
+                                        </a>
+                                        <a href="#">
+                                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M16.4998 6.3333H4.83317V3.92746C4.83317 3.09663 5.39817 2.32496 6.21734 2.18996C7.25984 2.01746 8.1665 2.82163 8.1665 3.8333H9.83317C9.83317 1.8858 8.15484 0.323296 6.16817 0.51663C4.43567 0.684963 3.1665 2.2408 3.1665 3.98163V6.3333H1.49984C1.039 6.3333 0.666504 6.70663 0.666504 7.16663V8.8333C0.666504 11.005 2.0615 12.8525 3.99984 13.5416V16.3333H5.6665V13.8333H12.3332V16.3333H13.9998V13.5416C15.9382 12.8525 17.3332 11.005 17.3332 8.8333V7.16663C17.3332 6.70663 16.9607 6.3333 16.4998 6.3333Z"
+                                                    fill="#F5593E" />
+                                            </svg>
+
+                                            1 bathroom</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="single__pool pool__mar">
+                                <div class="single__pool--img">
+                                    <div class="pool__img-slider owl-carousel">
+                                        <div class="pool__img">
+                                            <a href="list your proparty.html"><img src="assets/img/pool1.png"
+                                                    alt=""></a>
+                                        </div>
+                                        <div class="pool__img">
+                                            <a href="list your proparty.html"><img src="assets/img/pool1.png"
+                                                    alt=""></a>
+                                        </div>
+                                        <div class="pool__img">
+                                            <a href="list your proparty.html"><img src="assets/img/pool1.png"
+                                                    alt=""></a>
+                                        </div>
+                                        <div class="pool__img">
+                                            <a href="list your proparty.html"><img src="assets/img/pool1.png"
+                                                    alt=""></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="pool__love">
+                                        <div class="heart-container" onclick="toggleHeart('heart14')">
+                                            <a href="#!!" class="heart-icon" id="heart14"><i
+                                                    class="far fa-heart hrt-nn"></i> <i
+                                                    class="fas fa-heart hrt-blc"></i></a>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="pool__content" data-url="list your proparty.html">
+                                    <div class="pool__con--title">
+                                        <h3>Cozy bungalow and pool</h3>
+                                        <span>Venice, CA</span>
+                                    </div>
+                                    <div class="pool__price">
+                                        <h3>$5,000/ <span>month Member-Price</span></h3>
+                                        <p>$5,250/ <span>month Non-Member Price</span></p>
+                                    </div>
+                                    <div class="pool__tag">
+                                        <a href="#">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_2019_518)">
+                                                    <path
+                                                        d="M7.49984 9.16667C8.15911 9.16667 8.80357 8.97117 9.35174 8.6049C9.8999 8.23863 10.3271 7.71803 10.5794 7.10895C10.8317 6.49986 10.8977 5.82964 10.7691 5.18303C10.6405 4.53643 10.323 3.94249 9.85686 3.47631C9.39069 3.01014 8.79674 2.69267 8.15014 2.56405C7.50354 2.43543 6.83331 2.50144 6.22423 2.75374C5.61514 3.00603 5.09454 3.43327 4.72827 3.98143C4.362 4.5296 4.1665 5.17406 4.1665 5.83334C4.1665 6.71739 4.51769 7.56524 5.14281 8.19036C5.76794 8.81548 6.61578 9.16667 7.49984 9.16667Z"
+                                                        fill="#F5593E" />
+                                                    <path
+                                                        d="M14.1665 10.8333C14.661 10.8333 15.1443 10.6867 15.5554 10.412C15.9666 10.1373 16.287 9.74684 16.4762 9.29002C16.6654 8.83321 16.7149 8.33054 16.6185 7.84559C16.522 7.36064 16.2839 6.91518 15.9343 6.56555C15.5846 6.21592 15.1392 5.97781 14.6542 5.88135C14.1693 5.78489 13.6666 5.8344 13.2098 6.02362C12.753 6.21283 12.3625 6.53327 12.0878 6.94439C11.8131 7.35551 11.6665 7.83886 11.6665 8.33331C11.6665 8.99636 11.9299 9.63224 12.3987 10.1011C12.8676 10.5699 13.5035 10.8333 14.1665 10.8333Z"
+                                                        fill="#F5593E" />
+                                                    <path
+                                                        d="M17.4998 16.6666C17.7208 16.6666 17.9328 16.5788 18.0891 16.4226C18.2454 16.2663 18.3332 16.0543 18.3332 15.8333C18.3325 15.0545 18.1136 14.2914 17.7012 13.6307C17.2888 12.97 16.6995 12.4381 16.0001 12.0954C15.3008 11.7526 14.5193 11.6127 13.7445 11.6916C12.9697 11.7705 12.2325 12.065 11.6165 12.5416C10.8003 11.7286 9.76155 11.1755 8.63136 10.952C7.50116 10.7285 6.3301 10.8447 5.26586 11.2859C4.20162 11.7271 3.29185 12.4736 2.65129 13.4312C2.01073 14.3887 1.66806 15.5146 1.6665 16.6666C1.6665 16.8876 1.7543 17.0996 1.91058 17.2559C2.06686 17.4122 2.27882 17.5 2.49984 17.5H12.4998C12.7209 17.5 12.9328 17.4122 13.0891 17.2559C13.2454 17.0996 13.3332 16.8876 13.3332 16.6666"
+                                                        fill="#F5593E" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_2019_518">
+                                                        <rect width="20" height="20" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            6 guests</a>
+                                        <a href="#">
+                                            <svg width="20" height="17" viewBox="0 0 20 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_2045_214)">
+                                                    <path d="M19.2858 8.13068H0.714355V15.5222H19.2858V8.13068Z"
+                                                        fill="#F5593E" />
+                                                    <path d="M19.2856 16.2614V8.13068" stroke="#F5593E"
+                                                        stroke-width="1.47831" stroke-linecap="round" />
+                                                    <path d="M0.714355 16.2614V8.13068" stroke="#F5593E"
+                                                        stroke-width="1.47831" stroke-linecap="round" />
+                                                    <path
+                                                        d="M17.143 0H2.85728C2.068 0 1.42871 0.661544 1.42871 1.47831V6.6524H2.85728V5.17409C2.85728 4.76608 3.17728 4.43493 3.57157 4.43493H8.57157C8.96585 4.43493 9.28585 4.76608 9.28585 5.17409V6.6524H10.7144V5.17409C10.7144 4.76608 11.0344 4.43493 11.4287 4.43493H16.4287C16.823 4.43493 17.143 4.76608 17.143 5.17409V6.6524H18.5716V1.47831C18.5716 0.661544 17.9323 0 17.143 0Z"
+                                                        fill="#F5593E" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_2045_214">
+                                                        <rect width="20" height="17.0006" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+
+                                            2 beds
+                                        </a>
+                                        <a href="#">
+                                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M16.4998 6.3333H4.83317V3.92746C4.83317 3.09663 5.39817 2.32496 6.21734 2.18996C7.25984 2.01746 8.1665 2.82163 8.1665 3.8333H9.83317C9.83317 1.8858 8.15484 0.323296 6.16817 0.51663C4.43567 0.684963 3.1665 2.2408 3.1665 3.98163V6.3333H1.49984C1.039 6.3333 0.666504 6.70663 0.666504 7.16663V8.8333C0.666504 11.005 2.0615 12.8525 3.99984 13.5416V16.3333H5.6665V13.8333H12.3332V16.3333H13.9998V13.5416C15.9382 12.8525 17.3332 11.005 17.3332 8.8333V7.16663C17.3332 6.70663 16.9607 6.3333 16.4998 6.3333Z"
+                                                    fill="#F5593E" />
+                                            </svg>
+
+                                            1 bathroom</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single__pool pool__mar">
+                                <div class="single__pool--img">
+                                    <div class="pool__img-slider owl-carousel">
+                                        <div class="pool__img">
+                                            <a href="list your proparty.html"><img src="assets/img/pool1.png"
+                                                    alt=""></a>
+                                        </div>
+                                        <div class="pool__img">
+                                            <a href="list your proparty.html"><img src="assets/img/pool1.png"
+                                                    alt=""></a>
+                                        </div>
+                                        <div class="pool__img">
+                                            <a href="list your proparty.html"><img src="assets/img/pool1.png"
+                                                    alt=""></a>
+                                        </div>
+                                        <div class="pool__img">
+                                            <a href="list your proparty.html"><img src="assets/img/pool1.png"
+                                                    alt=""></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="pool__love">
+                                        <div class="heart-container" onclick="toggleHeart('heart15')">
+                                            <a href="#!!" class="heart-icon" id="heart15"><i
+                                                    class="far fa-heart hrt-nn"></i> <i
+                                                    class="fas fa-heart hrt-blc"></i></a>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="pool__content" data-url="list your proparty.html">
+                                    <div class="pool__con--title">
+                                        <h3>Cozy bungalow and pool</h3>
+                                        <span>Venice, CA</span>
+                                    </div>
+                                    <div class="pool__price">
+                                        <h3>$5,000/ <span>month Member-Price</span></h3>
+                                        <p>$5,250/ <span>month Non-Member Price</span></p>
+                                    </div>
+                                    <div class="pool__tag">
+                                        <a href="#">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_2019_518)">
+                                                    <path
+                                                        d="M7.49984 9.16667C8.15911 9.16667 8.80357 8.97117 9.35174 8.6049C9.8999 8.23863 10.3271 7.71803 10.5794 7.10895C10.8317 6.49986 10.8977 5.82964 10.7691 5.18303C10.6405 4.53643 10.323 3.94249 9.85686 3.47631C9.39069 3.01014 8.79674 2.69267 8.15014 2.56405C7.50354 2.43543 6.83331 2.50144 6.22423 2.75374C5.61514 3.00603 5.09454 3.43327 4.72827 3.98143C4.362 4.5296 4.1665 5.17406 4.1665 5.83334C4.1665 6.71739 4.51769 7.56524 5.14281 8.19036C5.76794 8.81548 6.61578 9.16667 7.49984 9.16667Z"
+                                                        fill="#F5593E" />
+                                                    <path
+                                                        d="M14.1665 10.8333C14.661 10.8333 15.1443 10.6867 15.5554 10.412C15.9666 10.1373 16.287 9.74684 16.4762 9.29002C16.6654 8.83321 16.7149 8.33054 16.6185 7.84559C16.522 7.36064 16.2839 6.91518 15.9343 6.56555C15.5846 6.21592 15.1392 5.97781 14.6542 5.88135C14.1693 5.78489 13.6666 5.8344 13.2098 6.02362C12.753 6.21283 12.3625 6.53327 12.0878 6.94439C11.8131 7.35551 11.6665 7.83886 11.6665 8.33331C11.6665 8.99636 11.9299 9.63224 12.3987 10.1011C12.8676 10.5699 13.5035 10.8333 14.1665 10.8333Z"
+                                                        fill="#F5593E" />
+                                                    <path
+                                                        d="M17.4998 16.6666C17.7208 16.6666 17.9328 16.5788 18.0891 16.4226C18.2454 16.2663 18.3332 16.0543 18.3332 15.8333C18.3325 15.0545 18.1136 14.2914 17.7012 13.6307C17.2888 12.97 16.6995 12.4381 16.0001 12.0954C15.3008 11.7526 14.5193 11.6127 13.7445 11.6916C12.9697 11.7705 12.2325 12.065 11.6165 12.5416C10.8003 11.7286 9.76155 11.1755 8.63136 10.952C7.50116 10.7285 6.3301 10.8447 5.26586 11.2859C4.20162 11.7271 3.29185 12.4736 2.65129 13.4312C2.01073 14.3887 1.66806 15.5146 1.6665 16.6666C1.6665 16.8876 1.7543 17.0996 1.91058 17.2559C2.06686 17.4122 2.27882 17.5 2.49984 17.5H12.4998C12.7209 17.5 12.9328 17.4122 13.0891 17.2559C13.2454 17.0996 13.3332 16.8876 13.3332 16.6666"
+                                                        fill="#F5593E" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_2019_518">
+                                                        <rect width="20" height="20" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            6 guests</a>
+                                        <a href="#">
+                                            <svg width="20" height="17" viewBox="0 0 20 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_2045_214)">
+                                                    <path d="M19.2858 8.13068H0.714355V15.5222H19.2858V8.13068Z"
+                                                        fill="#F5593E" />
+                                                    <path d="M19.2856 16.2614V8.13068" stroke="#F5593E"
+                                                        stroke-width="1.47831" stroke-linecap="round" />
+                                                    <path d="M0.714355 16.2614V8.13068" stroke="#F5593E"
+                                                        stroke-width="1.47831" stroke-linecap="round" />
+                                                    <path
+                                                        d="M17.143 0H2.85728C2.068 0 1.42871 0.661544 1.42871 1.47831V6.6524H2.85728V5.17409C2.85728 4.76608 3.17728 4.43493 3.57157 4.43493H8.57157C8.96585 4.43493 9.28585 4.76608 9.28585 5.17409V6.6524H10.7144V5.17409C10.7144 4.76608 11.0344 4.43493 11.4287 4.43493H16.4287C16.823 4.43493 17.143 4.76608 17.143 5.17409V6.6524H18.5716V1.47831C18.5716 0.661544 17.9323 0 17.143 0Z"
+                                                        fill="#F5593E" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_2045_214">
+                                                        <rect width="20" height="17.0006" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+
+                                            2 beds
+                                        </a>
+                                        <a href="#">
+                                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M16.4998 6.3333H4.83317V3.92746C4.83317 3.09663 5.39817 2.32496 6.21734 2.18996C7.25984 2.01746 8.1665 2.82163 8.1665 3.8333H9.83317C9.83317 1.8858 8.15484 0.323296 6.16817 0.51663C4.43567 0.684963 3.1665 2.2408 3.1665 3.98163V6.3333H1.49984C1.039 6.3333 0.666504 6.70663 0.666504 7.16663V8.8333C0.666504 11.005 2.0615 12.8525 3.99984 13.5416V16.3333H5.6665V13.8333H12.3332V16.3333H13.9998V13.5416C15.9382 12.8525 17.3332 11.005 17.3332 8.8333V7.16663C17.3332 6.70663 16.9607 6.3333 16.4998 6.3333Z"
+                                                    fill="#F5593E" />
+                                            </svg>
+
+                                            1 bathroom</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="single__pool pool__mar">
+                                <div class="single__pool--img">
+                                    <div class="pool__img-slider owl-carousel">
+                                        <div class="pool__img">
+                                            <a href="list your proparty.html"><img src="assets/img/pool1.png"
+                                                    alt=""></a>
+                                        </div>
+                                        <div class="pool__img">
+                                            <a href="list your proparty.html"><img src="assets/img/pool1.png"
+                                                    alt=""></a>
+                                        </div>
+                                        <div class="pool__img">
+                                            <a href="list your proparty.html"><img src="assets/img/pool1.png"
+                                                    alt=""></a>
+                                        </div>
+                                        <div class="pool__img">
+                                            <a href="list your proparty.html"><img src="assets/img/pool1.png"
+                                                    alt=""></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="pool__love">
+                                        <div class="heart-container" onclick="toggleHeart('heart16')">
+                                            <a href="#!!" class="heart-icon" id="heart16"><i
+                                                    class="far fa-heart hrt-nn"></i> <i
+                                                    class="fas fa-heart hrt-blc"></i></a>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="pool__content" data-url="list your proparty.html">
+                                    <div class="pool__con--title">
+                                        <h3>Cozy bungalow and pool</h3>
+                                        <span>Venice, CA</span>
+                                    </div>
+                                    <div class="pool__price">
+                                        <h3>$5,000/ <span>month Member-Price</span></h3>
+                                        <p>$5,250/ <span>month Non-Member Price</span></p>
+                                    </div>
+                                    <div class="pool__tag">
+                                        <a href="#">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_2019_518)">
+                                                    <path
+                                                        d="M7.49984 9.16667C8.15911 9.16667 8.80357 8.97117 9.35174 8.6049C9.8999 8.23863 10.3271 7.71803 10.5794 7.10895C10.8317 6.49986 10.8977 5.82964 10.7691 5.18303C10.6405 4.53643 10.323 3.94249 9.85686 3.47631C9.39069 3.01014 8.79674 2.69267 8.15014 2.56405C7.50354 2.43543 6.83331 2.50144 6.22423 2.75374C5.61514 3.00603 5.09454 3.43327 4.72827 3.98143C4.362 4.5296 4.1665 5.17406 4.1665 5.83334C4.1665 6.71739 4.51769 7.56524 5.14281 8.19036C5.76794 8.81548 6.61578 9.16667 7.49984 9.16667Z"
+                                                        fill="#F5593E" />
+                                                    <path
+                                                        d="M14.1665 10.8333C14.661 10.8333 15.1443 10.6867 15.5554 10.412C15.9666 10.1373 16.287 9.74684 16.4762 9.29002C16.6654 8.83321 16.7149 8.33054 16.6185 7.84559C16.522 7.36064 16.2839 6.91518 15.9343 6.56555C15.5846 6.21592 15.1392 5.97781 14.6542 5.88135C14.1693 5.78489 13.6666 5.8344 13.2098 6.02362C12.753 6.21283 12.3625 6.53327 12.0878 6.94439C11.8131 7.35551 11.6665 7.83886 11.6665 8.33331C11.6665 8.99636 11.9299 9.63224 12.3987 10.1011C12.8676 10.5699 13.5035 10.8333 14.1665 10.8333Z"
+                                                        fill="#F5593E" />
+                                                    <path
+                                                        d="M17.4998 16.6666C17.7208 16.6666 17.9328 16.5788 18.0891 16.4226C18.2454 16.2663 18.3332 16.0543 18.3332 15.8333C18.3325 15.0545 18.1136 14.2914 17.7012 13.6307C17.2888 12.97 16.6995 12.4381 16.0001 12.0954C15.3008 11.7526 14.5193 11.6127 13.7445 11.6916C12.9697 11.7705 12.2325 12.065 11.6165 12.5416C10.8003 11.7286 9.76155 11.1755 8.63136 10.952C7.50116 10.7285 6.3301 10.8447 5.26586 11.2859C4.20162 11.7271 3.29185 12.4736 2.65129 13.4312C2.01073 14.3887 1.66806 15.5146 1.6665 16.6666C1.6665 16.8876 1.7543 17.0996 1.91058 17.2559C2.06686 17.4122 2.27882 17.5 2.49984 17.5H12.4998C12.7209 17.5 12.9328 17.4122 13.0891 17.2559C13.2454 17.0996 13.3332 16.8876 13.3332 16.6666"
+                                                        fill="#F5593E" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_2019_518">
+                                                        <rect width="20" height="20" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            6 guests</a>
+                                        <a href="#">
+                                            <svg width="20" height="17" viewBox="0 0 20 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_2045_214)">
+                                                    <path d="M19.2858 8.13068H0.714355V15.5222H19.2858V8.13068Z"
+                                                        fill="#F5593E" />
+                                                    <path d="M19.2856 16.2614V8.13068" stroke="#F5593E"
+                                                        stroke-width="1.47831" stroke-linecap="round" />
+                                                    <path d="M0.714355 16.2614V8.13068" stroke="#F5593E"
+                                                        stroke-width="1.47831" stroke-linecap="round" />
+                                                    <path
+                                                        d="M17.143 0H2.85728C2.068 0 1.42871 0.661544 1.42871 1.47831V6.6524H2.85728V5.17409C2.85728 4.76608 3.17728 4.43493 3.57157 4.43493H8.57157C8.96585 4.43493 9.28585 4.76608 9.28585 5.17409V6.6524H10.7144V5.17409C10.7144 4.76608 11.0344 4.43493 11.4287 4.43493H16.4287C16.823 4.43493 17.143 4.76608 17.143 5.17409V6.6524H18.5716V1.47831C18.5716 0.661544 17.9323 0 17.143 0Z"
+                                                        fill="#F5593E" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_2045_214">
+                                                        <rect width="20" height="17.0006" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+
+                                            2 beds
+                                        </a>
+                                        <a href="#">
+                                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M16.4998 6.3333H4.83317V3.92746C4.83317 3.09663 5.39817 2.32496 6.21734 2.18996C7.25984 2.01746 8.1665 2.82163 8.1665 3.8333H9.83317C9.83317 1.8858 8.15484 0.323296 6.16817 0.51663C4.43567 0.684963 3.1665 2.2408 3.1665 3.98163V6.3333H1.49984C1.039 6.3333 0.666504 6.70663 0.666504 7.16663V8.8333C0.666504 11.005 2.0615 12.8525 3.99984 13.5416V16.3333H5.6665V13.8333H12.3332V16.3333H13.9998V13.5416C15.9382 12.8525 17.3332 11.005 17.3332 8.8333V7.16663C17.3332 6.70663 16.9607 6.3333 16.4998 6.3333Z"
+                                                    fill="#F5593E" />
+                                            </svg>
+
+                                            1 bathroom</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="pool__btn pool__mbl_btn">
+                            <a href="Search Page.html">View all properties</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- pool-area-end -->
+
+
+
+
+
+
+
+        <!-- footer-area-start -->
+        <footer class="footer">
+            <div class="container_cs">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer__flex">
+                            <div class="footer__left">
+                                <div class="footer__logo">
+                                    <a href="index.html"><img src="assets/img/footer-logo.png" alt=""></a>
+                                </div>
+                                <div class="footer__text">
+                                    <p>Live where you want when you want. No baggage.</p>
+                                    <div class="footer__socail">
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer__right">
+                                <div class="footer__menu">
+                                    <h3>FlutterPads</h3>
+                                    <ul>
+                                        <li><a href="property.html">Host a Pad</a></li>
+                                        <li><a href="#">Host an Experience</a></li>
+                                        <li><a href="#">Terms & Conditions</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer__menu">
+                                    <h3>Support</h3>
+                                    <ul>
+                                        <li><a href="#">FAQ</a></li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__copy">
+                            <p>©️ 2024 FlutterPads Holding Inc. All rights reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer-area-end -->
+
+    </div>
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/2.1.24/moment.min.js"></script>
+    </script>
+    <script src="assets/js/jquery.nice-number.js"></script>
+    <script src="assets/js/venobox.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/daterangepicker.js"></script>
+
+    <script>
+        /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            var element = document.getElementById("body");
+            element.classList.add("shape-space");
+        }
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.where__select')) {
+                var dropdowns = document.getElementsByClassName("where__select");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+    </script>
+
+
+
+    <script>
+        function toggleHeart(heartId) {
+            var heartIcon = document.getElementById(heartId);
+            heartIcon.classList.toggle('clicked');
+        }
+
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('select').niceSelect();
+        });
+
+    </script>
+
+    <script>
+        // JavaScript
+        const playButton = document.getElementById('playButton');
+        const videoPlayer = document.getElementById('videoPlayer');
+
+        playButton.addEventListener('click', function () {
+            // Toggle video visibility
+            if (videoPlayer.style.display === 'none') {
+                videoPlayer.style.display = 'block';
+                videoPlayer.play(); // Autoplay the video if desired
+                playButton.textContent = 'Pause Video'; // Change button text
+            } else {
+                videoPlayer.pause();
+                playButton.textContent = 'Play Video';
+            }
+        });
+
+    </script>
+    <script>
+        // JavaScript to open link when section is clicked
+        document.querySelectorAll('.pool__content').forEach(section => {
+            section.addEventListener('click', function () {
+                var url = this.getAttribute('data-url');
+                window.location.href = url;
+            });
+        });
+
+    </script>
+
+    <script src="assets/js/calender2.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const destinations = ['Los Angeles', 'Irvine', 'San Diego', 'San Francisco', 'Seattle', 'Denver'];
+            const destinationInput = document.getElementById('destination-input');
+            const dropdown = document.getElementById('myDropdown');
+            const dropFx = dropdown.querySelector('.filter__drop__fx');
+            const body = document.querySelector('.body');
+            const wrapper = document.querySelector('.wrapper');
+
+            function highlightCurrentDestination() {
+                const currentDestination = destinationInput.innerText;
+                const allItems = document.querySelectorAll('.filter__single__item');
+                allItems.forEach(item => {
+                    const itemText = item.querySelector('p').innerText;
+                    if (itemText === currentDestination) {
+                        item.classList.add('layer');
+                    } else {
+                        item.classList.remove('layer');
+                    }
+                });
+            }
+
+            function myFunction() {
+                dropFx.innerHTML = '';
+                dropdown.classList.add('active');
+                destinations.forEach(destination => {
+                    const suggestionItem = document.createElement('div');
+                    suggestionItem.classList.add('filter__single__item');
+                    suggestionItem.innerHTML = `<li><img src="assets/img/proparty-page/t1.png" alt=""></li><p>${destination}</p>`;
+                    suggestionItem.addEventListener('click', function () {
+                        // Remove 'highlight' class from all other items
+                        const allItems = document.querySelectorAll('.filter__single__item');
+                        allItems.forEach(item => item.classList.remove('highlight'));
+
+                        // Add 'highlight' class to the clicked item
+                        this.classList.add('highlight');
+
+                        // Update destination input
+                        destinationInput.innerText = destination;
+                        destinationInput.style.fontSize = "24px";
+                        destinationInput.style.fontWeight = "600";
+                        destinationInput.style.lineHeight = "39px";
+                        dropdown.classList.remove('active');
+                        setTimeout(() => {
+                            dropdown.style.display = 'none';
+                            body.classList.remove('shape-space');
+                            wrapper.classList.remove('space');
+                        }, 500);
+                    });
+                    dropFx.appendChild(suggestionItem);
+                });
+                dropdown.style.display = 'block';
+                body.classList.add('shape-space');
+                wrapper.classList.add('space');
+                setTimeout(() => {
+                    dropdown.classList.add('active');
+                }, 0);
+
+                highlightCurrentDestination();
+            }
+            document.addEventListener('click', function (event) {
+                if (!dropdown.contains(event.target) && event.target.closest('.where_select') == null) {
+                    dropdown.classList.remove('active');
+                    setTimeout(() => {
+                        dropdown.style.display = 'none';
+                        wrapper.classList.remove('space');
+                    }, 500);
+                }
+            });
+
+            window.myFunction = myFunction;
+        });
+
+    </script>
+    <script>
+        $(document).ready(function () {
+            // console.log('abc')
+            //
+            // // Ensure the Date Range Picker has been initialized
+            // if ($.fn.daterangepicker) {
+            //
+            //     console.log($.fn.daterangepicker)
+            //     // Assuming the function is accessible, override it
+            //     $.fn.daterangepicker.prototype.renderCalendar = renderCalendar;
+            // }
+
+            $('.minus').click(function () {
+                var $input = $(this).parent().find('input');
+                var count = parseInt($input.val()) - 1;
+                count = count < 1 ? 1 : count;
+                $input.val(count);
+                $input.change();
+                return false;
+            });
+            $('.plus').click(function () {
+                var $input = $(this).parent().find('input');
+                $input.val(parseInt($input.val()) + 1);
+                $input.change();
+                return false;
+            });
+        });
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
